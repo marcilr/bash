@@ -30,6 +30,12 @@ exec.txt
 file-contains.txt
   How to check if a file contains a specific string using bash
 
+file-extension.txt
+  Get file Extension
+
+  EXT=${1##*.}
+    Where $1 is filename to get extension from 
+
 for-loop.txt
   BASH For Loops
   http://www.zhihua-lai.com/acm/bash-for-loops/
