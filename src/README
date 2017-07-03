@@ -9,6 +9,10 @@ Filelist
 analaysis.sh
   Analysis of the /data/music directory 
 
+get-last-column.sh
+  How to print only last column?
+  https://unix.stackexchange.com/questions/17064/how-to-print-only-last-column
+
 getopt-simple.sh
   Author: Chris Morgan
   Used in the ABS Guide with permission.
