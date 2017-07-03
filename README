@@ -26,38 +26,3 @@ Filelist
 ========
 loop-over-files.txt
   Loop over files using find
-
-
-Links
-=====
-Makefile performance: $(shell)
-Difference between := and = assignments.
-http://blog.electric-cloud.com/2009/03/23/makefile-performance-shell/
-
-Advanced Bash-Scripting Guide
-An in-depth exploration of the art of shell scripting
-http://tldp.org/LDP/abs/html/
-
-Bash scripting Tutorial 
-http://www.linuxconfig.org/Bash_scripting_Tutorial#9-bash-if--else--fi-statements
-
-Bash For Loop Examples
-http://www.cyberciti.biz/faq/bash-for-loop/
-
-remove file extension
-Shell Programming and Scripting Post questions about KSH, CSH, SH, BASH, PERL, 
-PHP, SED, AWK and OTHER shell scripts and shell scripting languages here.
-Found sh code to extract file basename here.
-http://www.unix.com/shell-programming-scripting/40360-remove-file-extension.html
-
-Advanced Bash-Scripting Guide
-http://tldp.org/LDP/abs/html/
-
-BASH Programming - Introduction HOW-TO
-by Mike G mikkey at dynamo.com.ar
-http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html
-
-Case statement in shell
-Really good case info.
-http://www.softpanorama.org/Scripting/Shellorama/Control_structures/case_statement.shtml
-
