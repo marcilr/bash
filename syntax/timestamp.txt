@@ -1,0 +1,43 @@
+timestamp.txt
+Created Sat Sep 28 11:38:59 AKDT 2013
+Copyright (C) 2013 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+How to get file creation date/time in Bash/Debian?
+
+Interestingly the file system does not keep the creation date.
+
+
+answered Feb 12 at 21:41
+mikyra
+
+Each file has three distinct associated timestamps: the time of last data
+access, the time of last data modification, and the time the file status last
+changed.  These values are returned in the file characteristics structure
+struct stat, as described in .
+
+
+answered Mar 14 at 9:10
+jason
+
+mikyra's answer is good.The fact just like what he said.
+
+[jason@rh5 test]$ stat test.txt
+  File: `test.txt'
+  Size: 0               Blocks: 8          IO Block: 4096   regular empty file
+Device: 802h/2050d      Inode: 588720      Links: 1
+Access: (0664/-rw-rw-r--)  Uid: (  500/   jason)   Gid: (  500/   jason)
+Access: 2013-03-14 01:58:12.000000000 -0700
+Modify: 2013-03-14 01:58:12.000000000 -0700
+Change: 2013-03-14 01:58:12.000000000 -0700
+
+if you want to verify wich file was created first, you can structure your file
+name by appending system date when you create a series of files.
+
+http://stackoverflow.com/
+
+
+Links
+=====
+How to get file creation date/time in Bash/Debian?
+http://stackoverflow.com/questions/14842195/how-to-get-file-creation-date-time-in-bash-debian
