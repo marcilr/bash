@@ -1,0 +1,99 @@
+functions.txt
+Created Thu Apr 25 10:37:52 AKDT 2013
+Copyright (C) 2013 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Functions in bash
+
+
+Like "real" programming languages, Bash has functions, though in a somewhat
+limited implementation.  A function is a subroutine, a code block that
+implements a set of operations, a "black box" that performs a specified task.
+Wherever there is repetitive code, when a task repeats with only slight
+variations in procedure, then consider using a function.
+
+  function function_name {
+  command...
+  }
+
+or
+
+  function_name () {
+  command...
+  }
+
+This second form will cheer the hearts of C programmers (and is more portable).
+As in C, the function's opening bracket may optionally appear on the second
+line.
+
+  function_name ()  
+  {
+  command...
+  } 
+
+tldp.org/
+
+
+Passing Arguments to BASH function
+==================================
+Defining a function/procedure in Linux BASH is quite similar to other
+high-level languages.
+
+functionName() {
+   # content goes here
+}
+
+However, passing parameters inside the function is somehow different, which is
+quite shell-style.
+
+functionName() {
+   # the first parameter is $1
+   # the second parameter is $2
+   # and so on. $0 is the script name
+}
+
+
+Example
+-------
+#!/bin/bash
+
+hello()
+{
+  x=1
+  local y=1
+  echo "Hello, $1 $2"
+}
+
+hello "Zhihua" "Lai"
+echo $x $y
+
+
+If you want to define local variables that has the limited local scope, use
+the keyword local.  Otherwise the vars defined will be accessed outside the
+function.  This is somehow different than Python and PHP that you have to
+define global in order to access global variables otherwise the vars will be
+treated as local.
+
+$ which bash
+/bin/bash
+$ chmod +x ./test
+$ ./test
+Hello, Zhihua Lai
+1,
+$
+
+Happy scripting!
+
+–EOF–
+
+zhihua-lai.com/
+
+
+Links
+=====
+Chapter 24. Functions
+Advanced Bash-Scripting Guide
+http://tldp.org/LDP/abs/html/functions.html
+
+Passing Arguments to BASH function
+http://www.zhihua-lai.com/acm/passing-arguments-to-bash-function/
