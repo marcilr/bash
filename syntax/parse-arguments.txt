@@ -1,0 +1,92 @@
+parse-arguments.txt
+Created Tue Aug 28 17:27:35 AKDT 2012
+Copyright (C) 2012 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Parse arguments in bash
+
+
+Would like to be able to parse:
+o single-character options like -h
+o double-dash options like --help
+o quoted strings using double or single quotes like "quoted" or 'quoted'
+o Handle --arg=option or --arg option
+o Pass options togethor like 'progname -tbe' rather than 'progname -t -b -e'
+
+
+Looks like using an array is the easiest way to parse double quotes.
+stackoverflow.com/questions/15857027/
+
+
+
+
+getopt & getopts
+================
+Use of getopt and more recent getopts.
+
+getopt  - Separate program (/usr/bin/getopt)
+          Handles both long and short options.
+          Does not handle options with spaces.
+
+getopts - Part of bash
+          Does not support double-dash prefix.
+          Think this handles options with spaces.
+
+The bash getopts builtin does not support long option names with the double-dash prefix.  It only
+supports single-character options.
+
+There is a shell tool getopt which is another program, not a bash builtin.  The GNU implementation
+of getopt(3) (used by the command-line getopt(1) on Linux) supports parsing long options.
+
+But the BSD implementation of getopt (e.g. on Mac OS X) does not.
+
+stackoverflow.com/questions/402377/
+
+
+Parse arguments
+===============
+Command line arguments can be accessed in a bash using $1, $2, $3,...
+However, it would be nice to parse items like
+
+$ script -f <filename>
+
+  or
+
+$ script -a -c -e
+
+  or
+
+$ script --help
+
+
+In theory getopts could be used to do this.  I would like to develop bash subroutine with sane
+syntax to do this.
+
+
+Links
+=====
+Bash doesn't parse quotes when converting a string to arguments
+BTW, the right way to do this sort of thing is with an array:
+$ test=(One "This is two" Three)
+$ set -- "${test[@]}"
+$ echo "$2"
+This is two
+http://stackoverflow.com/questions/15857027/bash-doesnt-parse-quotes-when-converting-a-string-to-arguments
+
+bash script - parsing optional parameters
+Some very good example code here.
+http://www.linuxquestions.org/questions/programming-9/bash-script-parsing-optional-parameters-621728/
+
+Basic information about the use of getopt
+16.9. Miscellaneous Commands
+Chapter 16. External Filters, Programs and Commands
+Advanced Bash-Scripting Guide 
+http://tldp.org/LDP/abs/html/extmisc.html
+
+Copies the source directory and search & replace all r&R pair strings
+in file contents and file/dir names also.
+http://codepatterns.googlecode.com/svn-history/r50/trunk/BitteGerne.sh
+
+Using getopts in bash shell script to get long and short command line options
+http://stackoverflow.com/questions/402377/using-getopts-in-bash-shell-script-to-get-long-and-short-command-line-options
+
