@@ -1,0 +1,30 @@
+string-contains.txt
+Created Tue Aug 20 10:28:40 AKDT 2013
+Copyright (C) 2013 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+String contains in bash
+=======================
+Test if a string contains another string.
+
+string='My string';
+
+if [[ "$string" == *My* ]]
+then
+  echo "It's there!";
+fi
+
+needle='y s'
+if [[ "$string" == *"$needle"* ]]; then
+  echo "haystack '$string' contains needle '$needle'"
+fi
+
+... always quote strings to allow for whitespace
+
+stackoverflow.com/
+
+
+Links
+=====
+String contains in bash
+http://stackoverflow.com/questions/229551/string-contains-in-bash
