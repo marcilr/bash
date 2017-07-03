@@ -1,0 +1,74 @@
+README
+Created Mon Jul  3 08:38:14 AKDT 2017
+Copyright (C) 2017 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Filelist
+========
+array.txt
+  Bash Arrays
+
+cli-args.txt
+  Command Line Arguments
+
+command-line-syntax.txt
+  Command line syntax
+  http://publib.boulder.ibm.com/tividd/td/tec/SC32-1232-00/en_US/HTML/ecormst15.htm
+
+exec.txt
+  bash exec command
+
+file-contains.txt
+  How to check if a file contains a specific string using bash
+
+for-loop.txt
+  BASH For Loops
+  http://www.zhihua-lai.com/acm/bash-for-loops/
+
+functions.txt
+  Functions in bash
+  http://tldp.org/LDP/abs/html/functions.html
+
+
+IFS.txt
+  IFS (Internal Field Separator)
+
+increment.txt
+  Variable incrementing in bash:
+    ((i++))
+
+indirect-reference.txt
+  Indirect reference - Variable to access a variable
+
+loop-over-files.txt
+  Loop over files using find
+
+math.txt
+  Performing Math calculation in Bash
+
+parse-arguments.txt
+  Parse arguments in bash
+
+return-values-from-bash-functions.txt
+  Returning Values from Bash Functions
+  Really cool methods of returning values from bash functions.
+  Sep 11, 2009 By Mitch Frazier
+  http://www.linuxjournal.com/content/return-values-bash-functions
+
+string-contains.txt
+  Test if a string contains another string.
+  String contains in bash
+  http://stackoverflow.com/questions/229551/string-contains-in-bash
+
+suppress-output.txt
+  Bash suppress output from command
+
+syntax.txt
+  Syntax
+
+timestamp.txt
+  How to get file creation date/time in Bash/Debian?
+  Interestingly the file system does not keep the creation date.
+
+variables.txt
+  GNU Make Variables
