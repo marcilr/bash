@@ -1,0 +1,43 @@
+loop-over-files.txt
+Created Thu Nov 28 12:13:45 AKST 2013
+Copyright (C) 2013 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Loop over files using find
+
+
+First of all, this structure sometimes may cause problems:
+
+  find $source_dir -name *.$input_file_type | while read in_file
+  do
+      ...
+      ...
+  done
+
+Our forum's bash expert extraordinaire sisco311 recommended this
+other structure, and it's been working really well for me:
+
+  while IFS= read -d '' -r in_file
+  do
+      ...
+      ...
+  done< <(find $source_dir -name *.$input_file_type -print0)
+
+Besides a tighter integration between 'while' and 'find', it is
+also safer when filenames have none standard characters on them.
+
+where
+  -iname is like -name but case insensitive, so it could find
+   both file.mkv and FILE.MKV,for instance.
+
+  -o is a logical 'or'.
+
+
+--ubuntuforums.org/
+
+
+Links
+=====
+Thread: Handbrake CLI script
+Solid HandbrakeCLI and find syntax
+http://ubuntuforums.org/showthread.php?t=1941190
