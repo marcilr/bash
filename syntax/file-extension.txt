@@ -1,0 +1,12 @@
+file-extension.txt
+Created Mon Jul  3 09:03:14 AKDT 2017
+Copyright (C) 2017 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Get file Extension
+
+
+EXT=${1##*.}
+
+Where $1 is filename to get extension from.
+
