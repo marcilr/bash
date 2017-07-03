@@ -10,6 +10,9 @@ ls | sed 's/\(.*\)\..*/\1/'
   or
 
 BASENAME=${1%\.*}
+  Where $1 is the filename to get basename from.
 
-Where $1 is the filename to get basename from.
+  or
+
+basename - strip directory and suffix from filenames
 
