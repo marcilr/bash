@@ -1,0 +1,40 @@
+file-contains.txt
+Created Wed Sep 18 08:09:09 AKDT 2013
+Copyright (C) 2013 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+How to check if a file contains a specific string using bash
+
+  if grep -q SomeString "$File"; then
+    Some Actions
+  fi
+
+You don't need [[ ]] here.  Just run the command directly.  Add -q option when
+you don't need the string displayed when it was found.
+
+The grep command returns 0 or 1 in the exit code depending on the result of
+search.  0 if something was found; 1 otherwise.
+
+  $ echo hello | grep hi ; echo $?
+  1
+  $ echo hello | grep he ; echo $?
+  hello
+  0
+  $ echo hello | grep -q he ; echo $?
+  0
+
+You can specify commands as an condition of if.  If the command returns 0 in
+its exitcode that means that the condition is true; otherwise false.
+
+  $ if /bin/true; then echo that is true; fi
+  that is true
+  $ if /bin/false; then echo that is true; fi
+  $
+
+stackoverflow.com/
+
+
+Links
+=====
+How to check if a file contains a specific string using bash
+http://stackoverflow.com/questions/11287861/how-to-check-if-a-file-contains-a-specific-string-using-bash
