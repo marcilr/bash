@@ -11,15 +11,6 @@ EXT=${1##*.}
 
 Where $1 is filename to get extension from.
 
-Basename
-========
-ls | sed 's/\(.*\)\..*/\1/'
-
-  or
-
-BASENAME=${1%\.*}
-
-Where $1 is the filename to get basename from.
 
 
 Filelist
