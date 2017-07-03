@@ -1,0 +1,58 @@
+variables.txt
+Created Tue Sep 17 12:22:40 AKDT 2013
+Copyright (C) 2013 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+GNU Make Variables
+==================
+So what’s the problem?  GNU make supports two fundamental types of variables:
+simple and recursive. The difference between the two is in how they are
+expanded.  Simple variables are expanded once, when the variable is declared;
+recursive variables are expanded every time the variable is referenced.  This
+is a subtle but important distinction. Consider this makefile:
+
+FOO=abc
+BAR_1:=$(FOO)
+BAR_2 =$(FOO)
+FOO=def
+
+all:
+	@echo $(BAR_1)
+        @echo $(BAR_2)
+
+If you’re not familiar with the differences in gmake variables, the output
+from this build may surprise you. Heck, I’m painfully familiar with the
+differences, and the output would still surprise me if I hadn’t read the
+makefile very carefully:
+
+abc
+def
+
+What’s going on here? The variable BAR_1 is declared as a simple variable,
+because I used := to create it.  This caused gmake to immediately expand the
+text on the right hand side of the expression and capture the result as the
+value of BAR_1.  At the time BAR_1 was declared, FOO had the value abc, so
+that’s what we got in BAR_1.
+
+In contrast, BAR_2 is declared as a recursive variable, because I used the
+usual = (no colon) to declare it.  In this case, gmake captures the unexpanded
+literal text $(FOO) as the value of BAR_2; later, when I referenced BAR_2,
+gmake recursively expanded the value to obtain current value of BAR_2.  At that
+time, FOO had the value def, so that’s what we see used as the value of BAR_2.
+
+electric-cloud.com/
+
+
+
+Links
+=====
+Local Variables
+Advanced Bash-Scripting Guide:
+Prev    Chapter 24. Functions
+http://tldp.org/LDP/abs/html/localvar.html
+
+Makefile performance: $(shell)
+Difference between := and = assignments.
+Wow! great code formatting on this page!
+http://blog.electric-cloud.com/2009/03/23/makefile-performance-shell/
+
