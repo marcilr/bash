@@ -1,0 +1,15 @@
+basename.txt
+Created Mon Jul  3 08:58:55 AKDT 2017
+Copyright (C) 2017 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Get basename of file
+
+ls | sed 's/\(.*\)\..*/\1/'
+
+  or
+
+BASENAME=${1%\.*}
+
+Where $1 is the filename to get basename from.
+
