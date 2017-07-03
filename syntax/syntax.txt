@@ -1,0 +1,7 @@
+syntax.txt
+Created Mon Jul  3 08:38:26 AKDT 2017
+Copyright (C) 2017 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Syntax for bash
+
