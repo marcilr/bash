@@ -1,0 +1,51 @@
+suppress-output.txt
+Created Wed Sep 18 12:48:52 AKDT 2013
+Copyright (C) 2013 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Bash suppress output from command
+
+
+With Bash Scripting, how can I suppress all output from a command?
+
+The following sends standard output to the null device (bit bucket).
+
+scriptname >/dev/null
+and if you also want error messages to be sent there, use one of (the first
+may not work in all shells):
+
+scriptname &>/dev/null             <=== Works well in bash.
+scriptname >/dev/null 2>&1
+scriptname >/dev/null 2>/dev/nul
+
+land, if you want to record the messages but not see them, replace /dev/null
+with an actual file, such as:
+
+scriptname &>scriptname.out
+
+For completeness, under Windows cmd.exe (where "nul" is the equivalent of
+"/dev/null"), it is :
+
+scriptname >nul 2>nul
+
+
+
+1 Note that '&>' is peculiar to bash (and maybe C shells); Korn and Bourne
+  shells require 2> /dev/null or 2>&1 (to send stderr to the same place as
+  stdout).  The Korn shell seems to interpret '&>' as "run the stuff up to
+  & in background, then do the i/o redirection on an empty command". 
+  – Jonathan Leffler Mar 6 '09 at 0:16
+
+  Note that some commands write directly to the terminal device rather than
+  to standard output/error. To test, put echo foo > $(tty) in a script and
+  run ./test.sh &> /dev/null - The output is still printed to the terminal.
+  Of course this is not a problem if you're writing a script which uses no
+  such commands.
+
+stackoverflow.com/
+
+
+Links
+=====
+With Bash Scripting, how can I suppress all output from a command?
+http://stackoverflow.com/questions/617182/with-bash-scripting-how-can-i-suppress-all-output-from-a-command
