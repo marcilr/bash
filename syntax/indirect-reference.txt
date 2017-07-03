@@ -1,0 +1,35 @@
+indirect-reference.txt
+Created Sat Feb 23 22:24:29 AKST 2013
+Copyright (C) 2013 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Indirect reference - Variable to access a variable
+
+
+Indirect referencing in Bash is a multi-step process.  First,
+take the name of a variable: varname.  Then, reference it:
+$varname.  Then, reference the reference: $$varname.  Then,
+escape the first $: \$$varname.  Finally, force a reevaluation
+of the expression and assign it: eval newvar=\$$varname.
+
+tldp.org/LDP/abs/html/ivr.html
+
+
+Think I like the "${!num}" syntax better:
+  newvar="${!num}"
+
+tldp.org/LDP/abs/html/complexfunct.html
+
+
+Links
+=====
+24.1. Complex Functions and Function Complexities
+Chapter 24. Functions
+Fine ${!num} syntax for indirect references.
+http://tldp.org/LDP/abs/html/complexfunct.html
+
+Chapter 28. Indirect References
+Advanced Bash-Scripting Guide
+We have seen that referencing a variable, $var, fetches its value.
+But, what about the value of a value? What about $$var?
+http://tldp.org/LDP/abs/html/ivr.html
