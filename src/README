@@ -1,0 +1,22 @@
+README
+Created Sat May  8 22:24:09 AKDT 2010
+by Raymond E. Marcil
+
+
+
+Filelist
+========
+getopt-simple.sh
+Author: Chris Morgan
+Used in the ABS Guide with permission.
+
+While working for Spectrum Wireless I remember coworker 
+James Crippen saying getopt sucked and wrote code to
+replace it.  Spotted this getopt_simple() code online 
+and couldn't help but grab a copy.
+
+Links
+=====
+Example 10-5. Emulating getopt
+10.1. Manipulating Strings
+http://tldp.org/LDP/abs/html/string-manipulation.html
