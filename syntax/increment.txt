@@ -1,0 +1,13 @@
+increment.txt
+Created Sat Feb 23 22:52:16 AKST 2013
+Copyright (C) 2013 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Variable incrementing in bash:
+  ((i++))
+
+
+Links
+=====
+Variable incrementing in bash
+http://stackoverflow.com/questions/7482510/variable-incrementing-in-bash
