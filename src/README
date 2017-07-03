@@ -6,14 +6,18 @@ by Raymond E. Marcil
 
 Filelist
 ========
-getopt-simple.sh
-Author: Chris Morgan
-Used in the ABS Guide with permission.
+analaysis.sh
+  Analysis of the /data/music directory 
 
-While working for Spectrum Wireless I remember coworker 
-James Crippen saying getopt sucked and wrote code to
-replace it.  Spotted this getopt_simple() code online 
-and couldn't help but grab a copy.
+getopt-simple.sh
+  Author: Chris Morgan
+  Used in the ABS Guide with permission.
+
+  While working for Spectrum Wireless I remember coworker 
+  James Crippen saying getopt sucked and wrote code to
+  replace it.  Spotted this getopt_simple() code online 
+  and couldn't help but grab a copy.
+
 
 Links
 =====
