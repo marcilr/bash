@@ -1,0 +1,115 @@
+for-loop.txt
+Created Tue Jul 18 12:53:25 AKDT 2006
+by Raymond E. Marcil
+
+
+For loops are really cool in that variables set in the for loop
+will be retained at exit.  This is not the case for while loops
+that loose any variables set.
+
+
+increment/decrement
+===================
+Use the for loop of the form: for (( initializer; test; increment/decrement ))
+
+$ start=5; for (( num=$start,num2=$start+1; num>=0; --num,--num2 )); do
+> echo $num $num2;
+> done
+5 6
+4 5
+3 4
+2 3
+1 2
+0 1
+$
+
+linuxquestions.org/
+
+
+Message from Jim Weller on DOS for loops.
+
+---------- Forwarded message ----------
+From: "Jim W. Weller" <axjww@uaa.alaska.edu>
+To: "Jason A. Guild" <jason_guild@dnr.state.ak.us>, 
+Raymond Marcil <raymond_marcil@dnr.state.ak.us>
+Date: Thu, 06 Jul 2006 16:02:37 -0800
+Subject: bash FOR loop
+
+I use 'for i in *' and 'while true' a lot,
+but I just learned this C-esque FOR loop in bash
+
+
+for ((i=0;i<100;i++))
+do
+            echo $i
+            echo $(($i*2))
+done
+
+ 
+or on a single line
+ 
+
+for ((i=0;i<100;i++)); do echo $i; command2; done
+
+
+You can replace the ; in the command with & to execute a bunch
+of bg processes.
+ 
+
+Jim Weller
+Software Engineer
+Information Technology Services
+University of Alaska Anchorage
+3211 Providence Dr., Anchorage, AK 99508
+o: (907) 786-4656
+e: jim.weller@alaska.edu
+w: http://technology.uaa.alaska.edu
+
+I find the great thing in this world is not so much where we stand,
+as in what direction we are moving [...]
+
+- Oliver Wendell Holmes, Sr. -
+
+
+BASH For Loops
+==============
+BASH script under linux supports the for loops.  There are quite a few ways to
+write for loops.
+
+1. List the Values
+for I in 1 2 3; do echo $I; done
+
+2. Use 'SEQ' to list the values (but depreciated)
+for I in $(seq 1 3); do echo $I; done # or seq(1 1 3)
+
+3. C-style for in (( .. ))
+for ((I=1; I <= 3 ; I++)); do echo $I; done
+
+4. {..} to list the set
+for I in {1..3}; do echo $I; done  #bashV4.0+, or {1..3..1}
+
+All above print 1 2 3.  You can use 'continue' or 'break' as like other
+languages to jump to next or out of the loop.
+
+for i in {1..100}; do
+   if [ $i -eq 50 ]; then break; fi
+   if [ $i -eq 30 ]; then echo $i; continue; fi
+done
+
+gives the output of 30.
+
+Happy scripting!
+
+–EOF–
+
+zhihua-lai.com/
+
+
+Links
+=====
+BASH For Loops
+http://www.zhihua-lai.com/acm/bash-for-loops/
+
+Complex bash loop.
+Cool for loop syntax for increment/decrement.
+http://www.linuxquestions.org/questions/linux-general-1/complex-bash-loop-502983/
