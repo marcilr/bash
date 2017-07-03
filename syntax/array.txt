@@ -1,0 +1,50 @@
+arrays.txt
+Created Sat Feb 23 22:54:17 AKST 2013
+Copyright (C) 2013 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Bash Arrays
+
+
+Declaring an Array and Assigning values
+  name[index]=value
+
+Initializing an array during declaration
+  declare -a arrayname=(element1 element2 element3)
+
+Print the Whole Bash Array
+  echo ${Unix[@]}
+
+Length of array: 
+  ${#arrayname[@]} 
+
+Length of the nth Element in an Array:
+  ${#arrayname[n]}
+
+
+Extraction by offset and length for an array
+============================================
+The following example shows the way to extract
+2 elements starting from the position 3 from an
+array called Unix.
+
+$cat arraymanip.sh
+Unix=('Debian' 'Red hat' 'Ubuntu' 'Suse' 'Fedora' 'UTS' 'OpenLinux');
+echo ${Unix[@]:3:2}
+
+$./arraymanip.sh
+Suse Fedora
+
+thegeekstuff.com/
+
+
+Links
+=====
+Bash: add value to array without specifying a key
+ARRAY=()
+ARRAY+=('foo')
+ARRAY+=('bar')
+http://stackoverflow.com/questions/1951506/bash-add-value-to-array-without-specifying-a-key
+
+The Ultimate Bash Array Tutorial with 15 Examples
+http://www.thegeekstuff.com/2010/06/bash-array-tutorial/
