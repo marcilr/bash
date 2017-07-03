@@ -1,0 +1,16 @@
+bash.txt
+Created Mon Jul  3 08:30:38 AKDT 2017
+Copyright (C) 2017 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Bash is the GNU Project's shell.  Bash is the Bourne Again SHell.
+Bash is an sh-compatible shell that incorporates useful features from the
+Korn shell (ksh) and C shell (csh). 
+--gnu.org
+
+
+Links
+=====
+Bash
+http://www.gnu.org/software/bash/
+
