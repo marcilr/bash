@@ -1,0 +1,48 @@
+IFS.txt
+Created Thu Mar 14 10:58:37 AKDT 2013
+Copyright (C) 2013 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+IFS (Internal Field Separator)
+
+
+Example
+=======
+man ruby | less -p 777 
+IFS=$'\777' 
+#array=( $(find ~ -maxdepth 1 -type f -exec printf "%s\777" '{}' \; 2>/dev/null) ) 
+array=( $(find ~ -maxdepth 1 -type f -exec printf "%s\777" '{}' + 2>/dev/null) ) 
+echo ${#array[@]} 
+printf "%s\n" "${array[@]}" | nl 
+echo "${array[0]}" 
+IFS=$' \t\n'
+
+stackoverflow.com/
+
+
+$ man ruby | less -p 777
+...
+-0[octal]      (The digit 'zero'.)  Specifies the input record separator ($/) as an octal
+               number. If no digit is given, the null character is taken as the separator.
+               Other switches may follow the digits.  -00 turns Ruby into paragraph mode.
+              -0777 makes Ruby read whole file at once as a single string since there is no
+              legal character with that value.
+
+
+
+Links
+=====
+Bash Shell Loop Over Set of Files
+#!/bin/bash
+while IFS= read -r file; do
+  [ -f "$file" ] && rm -f "$file"
+done < "/tmp/data.txt"
+http://www.cyberciti.biz/faq/bash-loop-over-file/
+
+Capturing output of find . -print0 into a bash array
+Use of IFS=$'\777'
+http://stackoverflow.com/questions/1116992/capturing-output-of-find-print0-into-a-bash-array
+
+Using the Bash IFS variable to make for loops split with non whitespace characters
+Great page on use of IFS.
+http://mindspill.net/computing/linux-notes/using-the-bash-ifs-variable-to-make-for-loops-split-with-non-whitespace-characters/
