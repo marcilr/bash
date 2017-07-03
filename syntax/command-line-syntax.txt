@@ -1,0 +1,59 @@
+command-line-syntax.txt
+Created Tue Aug 28 17:34:11 AKDT 2012
+Copyright (C) 2012 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Command line syntax
+
+
+This document uses the following special characters to define the command
+syntax:
+
+[ ]     Identifies an optional argument. Arguments not enclosed in brackets
+        are required. 
+
+...     Indicates that you can specify multiple values for the previous
+        argument. 
+
+|       Indicates mutually exclusive information. You can use the argument
+        to the left of the separator or the argument to the right of the
+        separator. You cannot use both arguments in a single use of the
+        command.
+ 
+{ }     Delimits a set of mutually exclusive arguments when one of the
+        arguments is required.  If the arguments are optional, they are
+        enclosed in brackets ([ ]). 
+
+Notes:
+  The maximum number of characters in an argument is 256.
+  Enclose argument values that have embedded spaces with either single
+  or double quotation marks.
+
+For example:
+  wsetsrc [-S server] [-l label] [-n name] source
+
+The source argument is the only required argument for the wsetsrc command.
+The brackets around the other arguments indicate that these arguments are
+optional.
+
+Another example is the wlsac command:
+  wlsac [-l | -f format] [key... ] profile
+
+In this example, the -l and -f format arguments are mutually exclusive and
+optional.  The profile argument is required.  The key argument is optional.
+Also, the ellipsis marks (...) following the key argument indicate that you
+can specify multiple key names.
+
+Another example is the wrb -import command:
+  wrb -import {rule_pack | rule_set} ...
+
+In this example, the rule_pack and rule_set arguments are mutually
+exclusive, but one of the arguments must be specified.  Also, the
+ellipsis marks (...) indicate that you can specify multiple
+rule packs or rule sets.
+
+
+Links
+=====
+Command line syntax
+http://publib.boulder.ibm.com/tividd/td/tec/SC32-1232-00/en_US/HTML/ecormst15.htm
