@@ -8,6 +8,15 @@ Filelist
 array.txt
   Bash Arrays
 
+basename.txt
+  Get basename of file
+  ls | sed 's/\(.*\)\..*/\1/'
+    or
+  BASENAME=${1%\.*}
+    Where $1 is the filename to get basename from.
+    or
+  basename - strip directory and suffix from filenames
+
 cli-args.txt
   Command Line Arguments
 
