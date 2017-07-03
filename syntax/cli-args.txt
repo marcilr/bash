@@ -1,0 +1,43 @@
+cli-args.txt
+Created Thu Mar 14 10:56:59 AKDT 2013
+Copyright (C) 2013 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Command Line Arguments
+
+
+Loop over cli arguments
+=======================
+for var in "$@"; do
+    echo "$var"
+done
+
+http://stackoverflow.com/
+
+
+Example
+=======
+#
+# Scan for -r or -R argument to remove all
+# sshfs network directory mount points.
+#
+if [ ${#@} -gt 0 ]; then
+
+  case ${1} in
+    "-r"|"-R" )
+      remove
+      ;;
+    *)
+      echo "Unknown argument: ${1}, aborting."
+      exit
+      ;;
+  esac
+
+fi
+
+
+Links
+=====
+How to iterate over arguments in bash script
+http://stackoverflow.com/questions/255898/how-to-iterate-over-arguments-in-bash-script
+
