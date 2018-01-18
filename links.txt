@@ -60,6 +60,11 @@ String contains string test.
 Great syntax here.
 http://stackoverflow.com/questions/229551/string-contains-in-bash
 
+Ten Things I Wish I’d Known About bash
+Wrote Learn Bash the Hard Way:
+  https://leanpub.com/learnbashthehardway
+https://zwischenzugs.com/2018/01/06/ten-things-i-wish-id-known-about-bash/
+
 The Ultimate Bash Array Tutorial with 15 Examples
 by Sasikala on June 3, 2010
 http://www.thegeekstuff.com/2010/06/bash-array-tutorial/
