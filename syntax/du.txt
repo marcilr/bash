@@ -1,0 +1,26 @@
+du.txt
+Created Tue November 20, 2018
+by Raymond E. Marcilr <marcilr@gmail.com>
+
+
+du - estimate file space usage
+
+
+Summarize disk usage of each FILE, recursively for directories.
+
+
+Synopsis
+========
+du [OPTION]... [FILE]...
+du [OPTION]... --files0-from=F
+
+
+
+Syntax
+======
+Get size of all files in current workgin directory:
+
+# du -sh ./*
+4.0K    ./dailylogmove.sh
+4.0K    ./processdailylogs.sh
+# 
