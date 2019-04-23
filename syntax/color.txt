@@ -1,0 +1,13 @@
+color.txt
+Created Tue Apr 23 12:26:44 AKDT 2019
+by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Color
+
+
+Links
+=====
+BASH Shell Change The Color of Shell Prompt on Linux or UNIX
+last updated July 21, 2018 in Categories BASH Shell, Linux, UNIX
+https://www.cyberciti.biz/faq/bash-shell-change-the-color-of-my-shell-prompt-under-linux-or-unix/
