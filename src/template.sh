@@ -57,10 +57,12 @@ usage() {
 #
 # process_cli_args()
 #
-# TODO: Would be great if this handled:
-#       -v    verbose
-#       -vv   very verbose
-#       -vvv  extremely verbose
+# Process the command line  arguments:
+#
+# -q | --quite     This should superceed the -v|-vv|-vvv args
+# -v | --verbose   verbose
+# -vv              very verbose
+# -vvv             extremely verbose
 #
 process_cli_args() {
     debug "process_cli_args() start"
