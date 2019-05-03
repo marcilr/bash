@@ -31,6 +31,9 @@ Case statement in shell
 Really good case info.
 http://www.softpanorama.org/Scripting/Shellorama/Control_structures/case_statement.shtml
 
+Changing behavior of bash prompt when functioning as root
+https://askubuntu.com/questions/305052/changing-behavior-of-bash-prompt-when-functioning-as-root
+
 In Bash, how do you access command line arguments inside a function?
 Pass and array of them.
 http://stackoverflow.com/questions/2740906/in-bash-how-do-you-access-command-line-arguments-inside-a-function
