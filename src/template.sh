@@ -48,13 +48,19 @@ debug() {
 #
 usage() {
     debug "usage() start"
-
+    echo "template.sh"
 
     debug "usage() end"
 }   # usage()
 
+
 #
 # process_cli_args()
+#
+# TODO: Would be great if this handled:
+#       -v    verbose
+#       -vv   very verbose
+#       -vvv  extremely verbose
 #
 process_cli_args() {
     debug "process_cli_args() start"
@@ -66,7 +72,12 @@ process_cli_args() {
     debug "process_cli_args() argCount: ${argCount}"
 
     # Report cli arguments
-    debug "process_cli_args() argsArray: ${argsArray}"
+    debug "process_cli_args() argArray: ${argArray}"
+
+    # Loop over command line arguments
+    for ARG in ${argArray}; do
+        debug "process_cli_args() ARG: ${ARG}"
+    done
 
     debug "process_cli_args() end"
 
@@ -86,7 +97,7 @@ scriptName=${0}
 # Save array of command line arguments
 # and argument count
 #
-argsArray=${@}
+argArray=${@}
 argCount=("$#")
 
 if [ $argCount == 0 ]; then
