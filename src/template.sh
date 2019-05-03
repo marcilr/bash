@@ -43,6 +43,15 @@ debug() {
 
 }   # debug()
 
+#
+# usage()
+#
+usage() {
+    debug "usage() start"
+
+
+    debug "usage() end"
+}   # usage()
 
 #
 # process_cli_args()
@@ -80,11 +89,16 @@ scriptName=${0}
 argsArray=${@}
 argCount=("$#")
 
-# Report number of command line arguments
-debug "main: Got ${argCount} cli arguments"
+if [ $argCount == 0 ]; then
+  usage
+else
+  # Report number of command line arguments
+  debug "main: Got ${argCount} cli arguments"
 
-# Process command line arguments
-process_cli_args
+  # Process command line arguments
+  process_cli_args
+fi
+
 
 # *** Put main body here ***
 
