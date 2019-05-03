@@ -49,7 +49,10 @@ debug() {
 usage() {
     debug "usage() start"
     echo "template.sh"
-
+    echo "Usage:"
+    echo "-q | --quite     quite - suppress all ebugging output"
+    echo "-u | --usage     display usage"
+    echo "-v, -vv, -vvv    verbose, very verbose, extremely verbose"
     debug "usage() end"
 }   # usage()
 
