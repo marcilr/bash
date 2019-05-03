@@ -32,6 +32,7 @@ EMAIL="marcilr@gmail.com"
 # =========
 # Functions
 # =========
+
 #
 # debug()
 #
@@ -40,13 +41,32 @@ debug() {
     echo "debug() ${1}"
   fi
 
-}
+}   # debug()
+
+
+#
+# process_cli_args()
+#
+process_cli_args() {
+    debug "process_cli_args() start"
+
+    #debug("process_cli_args() This is the name of the script: ", sys.argv[0])
+    #debug("process_cli_args() Number of arguments: ", len(sys.argv))
+    #debug("process_cli_args() The arguments are: " , str(sys.argv))
+
+    debug "process_cli_args() end"
+
+}   # process_cli_args()
+
 
 
 # ====
 # Main
 # ====
 debug "main: *** START ***"
+
+# Process command line arguments
+process_cli_args
 
 # *** Put main body here ***
 
