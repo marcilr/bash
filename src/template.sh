@@ -50,9 +50,14 @@ debug() {
 process_cli_args() {
     debug "process_cli_args() start"
 
-    #debug("process_cli_args() This is the name of the script: ", sys.argv[0])
-    #debug("process_cli_args() Number of arguments: ", len(sys.argv))
-    #debug("process_cli_args() The arguments are: " , str(sys.argv))
+    # Report name of script
+    debug "process_cli_args() scriptName: ${scriptName}"
+
+    # Report number of command line arguments
+    debug "process_cli_args() argCount: ${argCount}"
+
+    # Report cli arguments
+    debug "process_cli_args() argsArray: ${argsArray}"
 
     debug "process_cli_args() end"
 
@@ -65,9 +70,22 @@ process_cli_args() {
 # ====
 debug "main: *** START ***"
 
+# Save name of script
+scriptName=${0}
+
+#
+# Save array of command line arguments
+# and argument count
+#
+argsArray=${@}
+argCount=("$#")
+
+# Report number of command line arguments
+debug "main: Got ${argCount} cli arguments"
+
 # Process command line arguments
 process_cli_args
 
 # *** Put main body here ***
 
-debug "Main: *** END ***"
+debug "main: *** END ***"
