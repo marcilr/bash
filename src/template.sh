@@ -4,7 +4,7 @@
 # by Raymond E. Marcil <marcilr@gmail.com>
 #
 # Template bash script with common layout and functions.
-# No need to reinvent the wheel.
+# No need to reinvent the wheel every time.
 #
 
 # =============
