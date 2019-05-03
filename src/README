@@ -22,6 +22,11 @@ getopt-simple.sh
   replace it.  Spotted this getopt_simple() code online 
   and couldn't help but grab a copy.
 
+template.sh
+  Template bash script with common layout and functions.
+  No need to reinvent the wheel every time.
+
+
 
 Links
 =====
