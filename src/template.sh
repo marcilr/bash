@@ -28,7 +28,10 @@ EMAIL="marcilr@gmail.com"
 # Binaries
 # ========
 CAT=/bin/cat
+GREP=/bin/grep
 LS=/bin/ls
+SED=/bin/sed
+
 
 # =========
 # Functions
