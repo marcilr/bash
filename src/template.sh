@@ -27,6 +27,7 @@ EMAIL="marcilr@gmail.com"
 # ========
 # Binaries
 # ========
+CAT=/bin/cat
 
 
 # =========
