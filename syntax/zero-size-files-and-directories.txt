@@ -1,0 +1,16 @@
+zero-size-files-and-directories.txt
+Created Tue May 14 08:17:27 AKDT 2019
+Copyright (C) 2019 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Find and delete the zero size files and empty directories
+
+
+FIXME: Need to copy content here...
+
+
+
+Links
+=====
+Find and delete the zero size files and empty directories
+https://mycyberuniverse.com/linux/find-and-delete-the-zero-size-files-and-empty-directories.html
