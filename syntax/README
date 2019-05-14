@@ -41,6 +41,7 @@ file-extension.txt
 
 zero-size-files-and-directories.txt
   Find and delete the zero size files and empty directories
+  by Arthur Gareginyan, February 21, 2015
   https://mycyberuniverse.com/linux/find-and-delete-the-zero-size-files-and-empty-directories.html
 
 for-loop.txt
