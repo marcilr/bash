@@ -34,6 +34,9 @@ http://www.softpanorama.org/Scripting/Shellorama/Control_structures/case_stateme
 Changing behavior of bash prompt when functioning as root
 https://askubuntu.com/questions/305052/changing-behavior-of-bash-prompt-when-functioning-as-root
 
+How to Get the Size of a Directory in Linux
+https://linuxize.com/post/how-get-size-of-file-directory-linux/
+
 In Bash, how do you access command line arguments inside a function?
 Pass and array of them.
 http://stackoverflow.com/questions/2740906/in-bash-how-do-you-access-command-line-arguments-inside-a-function
