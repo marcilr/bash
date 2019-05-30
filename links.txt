@@ -37,6 +37,10 @@ https://askubuntu.com/questions/305052/changing-behavior-of-bash-prompt-when-fun
 How to Get the Size of a Directory in Linux
 https://linuxize.com/post/how-get-size-of-file-directory-linux/
 
+How to list only ordinary files on UNIX
+find /path/of/yourlocation type -f
+https://superuser.com/questions/743344/how-to-list-only-ordinary-files-on-unix
+
 In Bash, how do you access command line arguments inside a function?
 Pass and array of them.
 http://stackoverflow.com/questions/2740906/in-bash-how-do-you-access-command-line-arguments-inside-a-function
