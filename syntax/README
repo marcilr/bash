@@ -39,6 +39,12 @@ file-extension.txt
   EXT=${1##*.}
     Where $1 is filename to get extension from 
 
+finding-empty-diretories.txt
+  To find empty directories use:
+  $ find . -type d -empty
+  --Finding empty directories UNIX
+    https://stackoverflow.com/questions/2810838/finding-empty-directories-unix
+
 zero-size-files-and-directories.txt
   Find and delete the zero size files and empty directories
   by Arthur Gareginyan, February 21, 2015
