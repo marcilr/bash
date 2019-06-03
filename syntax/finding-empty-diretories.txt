@@ -1,0 +1,15 @@
+finding-empty-diretories.txt
+Created Mon Jun  3 09:54:07 AKDT 2019
+Copyright (C) 2019 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+
+To find empty directories use:
+$ find . -type d -empty
+
+
+Links
+=====
+Finding empty directories UNIX
+https://stackoverflow.com/questions/2810838/finding-empty-directories-unix
+
