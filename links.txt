@@ -34,12 +34,20 @@ http://www.softpanorama.org/Scripting/Shellorama/Control_structures/case_stateme
 Changing behavior of bash prompt when functioning as root
 https://askubuntu.com/questions/305052/changing-behavior-of-bash-prompt-when-functioning-as-root
 
+How do I compare two string variables in an 'if'
+statement in Bash [duplicate]
+https://stackoverflow.com/questions/4277665/how-do-i-compare-two-string-variables-in-an-if-statement-in-bash
+
 How to Get the Size of a Directory in Linux
 https://linuxize.com/post/how-get-size-of-file-directory-linux/
 
 How to list only ordinary files on UNIX
 find /path/of/yourlocation type -f
 https://superuser.com/questions/743344/how-to-list-only-ordinary-files-on-unix
+
+How To Use Pushd, Popd And Dirs Commands For Faster CLI Navigation
+BY SK · PUBLISHED DECEMBER 30, 2016 · UPDATED DECEMBER 27, 2017
+https://www.ostechnix.com/use-pushd-popd-dirs-commands-faster-cli-navigation/
 
 Finding empty directories UNIX
 find . -type d -empty
