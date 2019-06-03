@@ -49,6 +49,11 @@ How To Use Pushd, Popd And Dirs Commands For Faster CLI Navigation
 BY SK · PUBLISHED DECEMBER 30, 2016 · UPDATED DECEMBER 27, 2017
 https://www.ostechnix.com/use-pushd-popd-dirs-commands-faster-cli-navigation/
 
+HowTo: Check If a Directory Exists In a Shell Script
+last updated May 2, 2017 in Categories BASH Shell,
+CentOS, Debian / Ubuntu, FreeBSD, KSH Shell, Linux, Suse, UNIX
+https://www.cyberciti.biz/faq/howto-check-if-a-directory-exists-in-a-bash-shellscript/
+
 Finding empty directories UNIX
 find . -type d -empty
 https://stackoverflow.com/questions/2810838/finding-empty-directories-unix
