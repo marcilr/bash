@@ -12,6 +12,11 @@ Advanced Bash-Scripting Guide
 An in-depth exploration of the art of shell scripting
 http://tldp.org/LDP/abs/html/
 
+Array variables
+Bash Guide for Beginners
+Chapter 10. More on variables
+https://www.tldp.org/LDP/Bash-Beginners-Guide/html/sect_10_02.html
+
 associative array in bash
 Good code and analysis.
 http://stackoverflow.com/questions/12839174/associative-array-in-bash
@@ -66,6 +71,9 @@ Local Variables
 Advanced Bash-Scripting Guide:
 Prev	Chapter 24. Functions
 http://tldp.org/LDP/abs/html/localvar.html
+
+Loops for, while and until
+http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-7.html
 
 Makefile performance: $(shell)
 Difference between := and = assignments.
