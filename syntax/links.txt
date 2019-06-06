@@ -1,0 +1,13 @@
+links.txt
+Created Thu Jun  6 07:18:05 AKDT 2019
+Copyright (C) 2019 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Syntax related links
+
+
+Links
+=====
+How to limit depth for recursive file list?
+find -maxdepth 2 -type d -ls >dirlist
+https://stackoverflow.com/questions/4509624/how-to-limit-depth-for-recursive-file-list
