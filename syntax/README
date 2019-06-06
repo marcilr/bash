@@ -45,11 +45,6 @@ finding-empty-diretories.txt
   --Finding empty directories UNIX
     https://stackoverflow.com/questions/2810838/finding-empty-directories-unix
 
-zero-size-files-and-directories.txt
-  Find and delete the zero size files and empty directories
-  by Arthur Gareginyan, February 21, 2015
-  https://mycyberuniverse.com/linux/find-and-delete-the-zero-size-files-and-empty-directories.html
-
 for-loop.txt
   BASH For Loops
   http://www.zhihua-lai.com/acm/bash-for-loops/
@@ -68,6 +63,9 @@ increment.txt
 
 indirect-reference.txt
   Indirect reference - Variable to access a variable
+
+links.txt
+  Syntax related links
 
 loop-over-files.txt
   Loop over files using find
@@ -101,3 +99,8 @@ timestamp.txt
 
 variables.txt
   GNU Make Variables
+
+zero-size-files-and-directories.txt
+  Find and delete the zero size files and empty directories
+  by Arthur Gareginyan, February 21, 2015
+  https://mycyberuniverse.com/linux/find-and-delete-the-zero-size-files-and-empty-directories.html
