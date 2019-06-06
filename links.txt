@@ -72,6 +72,15 @@ Advanced Bash-Scripting Guide:
 Prev	Chapter 24. Functions
 http://tldp.org/LDP/abs/html/localvar.html
 
+How to check if a string contains a substring in Bash
+https://stackoverflow.com/questions/229551/how-to-check-if-a-string-contains-a-substring-in-bash
+
+if/then/else constructs
+More advanced if usage
+Conditional statements
+Bash Guide for Beginners
+http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_07_02.html
+
 Loops for, while and until
 http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-7.html
 
@@ -100,6 +109,13 @@ Wrote Learn Bash the Hard Way:
   https://leanpub.com/learnbashthehardway
 https://zwischenzugs.com/2018/01/06/ten-things-i-wish-id-known-about-bash/
 
+Test if a string contains a substring
+UNIX & Linux
+https://unix.stackexchange.com/questions/370889/test-if-a-string-contains-a-substring
+
 The Ultimate Bash Array Tutorial with 15 Examples
 by Sasikala on June 3, 2010
 http://www.thegeekstuff.com/2010/06/bash-array-tutorial/
+
+Using if elif fi in shell scripts [duplicate]
+https://stackoverflow.com/questions/2359270/using-if-elif-fi-in-shell-scripts
