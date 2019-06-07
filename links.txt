@@ -50,6 +50,9 @@ How to list only ordinary files on UNIX
 find /path/of/yourlocation type -f
 https://superuser.com/questions/743344/how-to-list-only-ordinary-files-on-unix
 
+How to remove the first part of a string in bash?
+https://stackoverflow.com/questions/13788166/how-to-remove-the-first-part-of-a-string-in-bash
+
 How To Use Pushd, Popd And Dirs Commands For Faster CLI Navigation
 BY SK · PUBLISHED DECEMBER 30, 2016 · UPDATED DECEMBER 27, 2017
 https://www.ostechnix.com/use-pushd-popd-dirs-commands-faster-cli-navigation/
