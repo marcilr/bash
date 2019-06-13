@@ -125,5 +125,8 @@ The Ultimate Bash Array Tutorial with 15 Examples
 by Sasikala on June 3, 2010
 http://www.thegeekstuff.com/2010/06/bash-array-tutorial/
 
+Bash Shell Find Out If a Variable Is Empty Or Not - nixCraft
+https://www.cyberciti.biz/faq/unix-linux-bash-script-check-if-variable-is-empty/
+
 Using if elif fi in shell scripts [duplicate]
 https://stackoverflow.com/questions/2359270/using-if-elif-fi-in-shell-scripts
