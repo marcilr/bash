@@ -32,6 +32,11 @@ http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html
 Bash scripting Tutorial
 http://www.linuxconfig.org/Bash_scripting_Tutorial#9-bash-if--else--fi-statements
 
+Break and continue
+Bash Guide for Beginners
+Chapter 9. Repetitive tasks
+http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_09_05.html
+
 Case statement in shell
 Really good case info.
 http://www.softpanorama.org/Scripting/Shellorama/Control_structures/case_statement.shtml
