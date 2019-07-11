@@ -1,0 +1,48 @@
+squeeze-space.txt
+Created Thu Jul 11 10:22:33 AKDT 2019
+Copyright (C) 2019 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Squeeze space
+
+
+To squeeze multiple spaces to a single space in bash use:
+  tr -s [:blank:]
+
+
+Examples
+========
+awk version is probably the best way to go, but you can also use cut
+if you firstly squeeze the repeats with tr:
+
+ps axu | grep jbos[s] | tr -s ' ' | cut -d' ' -f5
+#        ^^^^^^^^^^^^   ^^^^^^^^^   ^^^^^^^^^^^^^
+#              |            |             |
+#              |            |       get 5th field
+#              |            |
+#              |        squeeze spaces
+#              |
+#        avoid grep itself to appear in the list
+
+--edited Feb 15 '17 at 11:39
+  answered Jan 31 '14 at 9:40
+  fedorqui
+  stackoverflow.com/questions/7142735
+
+
+
+I like to use the tr -s command for this
+
+   ps aux | tr -s [:blank:] | cut -d' ' -f3
+
+This squeezes all white spaces down to 1 space.  This way telling
+cut to use a space as a delimiter is honored as expected.
+--answered Apr 16 '15 at 20:42
+  Rob D
+  stackoverflow.com/questions/7142735
+
+
+Links
+=====
+How to specify more spaces for the delimiter using cut?
+https://stackoverflow.com/questions/7142735/how-to-specify-more-spaces-for-the-delimiter-using-cut
