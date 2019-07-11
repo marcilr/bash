@@ -82,6 +82,10 @@ return-values-from-bash-functions.txt
   Sep 11, 2009 By Mitch Frazier
   http://www.linuxjournal.com/content/return-values-bash-functions
 
+squeeze-space.txt
+  How to specify more spaces for the delimiter using cut?
+  https://stackoverflow.com/questions/7142735/how-to-specify-more-spaces-for-the-delimiter-using-cut
+
 string-contains.txt
   Test if a string contains another string.
   String contains in bash
