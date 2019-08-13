@@ -18,6 +18,18 @@ du [OPTION]... --files0-from=F
 
 Syntax
 ======
+Nice output from:
+
+# U.S.
+du -h <dir> | grep '[0-9\.]\+G'
+
+# Others
+du -h <dir> | grep '[0-9\,]\+G'
+
+--Tracking down where disk space has gone on Linux?
+  https://unix.stackexchange.com/questions/125429/tracking-down-where-disk-space-has-gone-on-linux
+
+
 Get size of all files in current workgin directory:
 
 # du -sh ./*
