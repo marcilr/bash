@@ -18,6 +18,25 @@ du [OPTION]... --files0-from=F
 
 Syntax
 ======
+This looks nice:
+
+$ du -sh * | sort -hr | head -n10
+12G	collections
+5.8G	solr-6.0.0
+763M	src
+73M	rhq-agent
+9.6M	WEB-INF
+5.8M	awstats
+1.3M	bin
+264K	share
+208K	lib
+24K	META-INF
+$
+
+--Finding files that use the most disk space
+  https://unix.stackexchange.com/questions/37221/finding-files-that-use-the-most-disk-space
+
+
 Nice output from:
 
 # U.S.
