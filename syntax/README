@@ -27,6 +27,10 @@ command-line-syntax.txt
   Command line syntax
   http://publib.boulder.ibm.com/tividd/td/tec/SC32-1232-00/en_US/HTML/ecormst15.htm
 
+df.txt
+  df - report file system disk space usage
+  Use: df -hl
+
 exec.txt
   bash exec command
 
