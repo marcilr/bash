@@ -44,6 +44,17 @@ http://www.softpanorama.org/Scripting/Shellorama/Control_structures/case_stateme
 Changing behavior of bash prompt when functioning as root
 https://askubuntu.com/questions/305052/changing-behavior-of-bash-prompt-when-functioning-as-root
 
+Extracting the values separated by comma
+Shell Programming and Scripting
+Think that cut with use of:
+  -d, --delimiter=DELIM
+      use DELIM instead of TAB for field delimiter
+  -f, --fields=LIST
+      select only these fields;  also print any line that contains  no
+      delimiter character, unless the -s option is specified
+Is the easiest method.
+https://www.unix.com/shell-programming-and-scripting/115759-extracting-values-separated-comma.html
+
 How do I compare two string variables in an 'if'
 statement in Bash [duplicate]
 https://stackoverflow.com/questions/4277665/how-do-i-compare-two-string-variables-in-an-if-statement-in-bash

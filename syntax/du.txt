@@ -18,9 +18,90 @@ du [OPTION]... --files0-from=F
 
 Syntax
 ======
-Get size of all files in current workgin directory:
+This looks nice:
+
+$ du -sh * | sort -hr | head -n10
+12G	collections
+5.8G	solr-6.0.0
+763M	src
+73M	rhq-agent
+9.6M	WEB-INF
+5.8M	awstats
+1.3M	bin
+264K	share
+208K	lib
+24K	META-INF
+$
+
+--Finding files that use the most disk space
+  https://unix.stackexchange.com/questions/37221/finding-files-that-use-the-most-disk-space
+
+
+Nice output from:
+
+# U.S.
+du -h <dir> | grep '[0-9\.]\+G'
+
+# Others
+du -h <dir> | grep '[0-9\,]\+G'
+
+--Tracking down where disk space has gone on Linux?
+  https://unix.stackexchange.com/questions/125429/tracking-down-where-disk-space-has-gone-on-linux
+
+
+Get size of all files in current working directory:
 
 # du -sh ./*
 4.0K    ./dailylogmove.sh
 4.0K    ./processdailylogs.sh
 # 
+
+
+Pretty nice:
+
+# du -Pshx /* 2>/dev/null
+12K	/00BACKUPS
+9.2M	/bin
+52M	/boot
+0	/dev
+6.5M	/etc
+89G	/home
+0	/initrd.img
+0	/initrd.img.old
+268M	/lib
+4.0K	/lib64
+16K	/lost+found
+8.0K	/media
+4.0K	/mnt
+223M	/opt
+0	/proc
+1.8M	/root
+8.5M	/run
+6.5M	/sbin
+4.0K	/srv
+106G	/svn-to-git
+0	/sys
+276K	/tmp
+5.2G	/usr
+19G	/var
+0	/vmlinuz
+0	/vmlinuz.old
+
+
+The -s option summarizes and displays total for each argument.
+h prints Mio, Gio, etc.
+x = stay in one filesystem (very useful).
+P = don't follow symlinks (which could cause files to be
+    counted twice for instance).
+Be careful, the /root directory will not be shown, you have to
+run ~# du -Pshx /root 2>/dev/null to get that (once, I struggled
+a lot not pointing out that my /root directory had gone full).
+--Tracking down where disk space has gone on Linux?
+  https://unix.stackexchange.com/questions/125429/tracking-down-where-disk-space-has-gone-on-linux
+
+
+Links
+=====
+ncdu sounds good
+ncdu - NCurses Disk Usage
+https://unix.stackexchange.com/questions/125429/tracking-down-where-disk-space-has-gone-on-linux

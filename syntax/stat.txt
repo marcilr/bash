@@ -1,0 +1,46 @@
+stat.txt
+Created Tue Aug 13 14:14:34 AKDT 2019
+Copyright (C) 2019 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+stat - display file or file system status
+
+
+The question is how to identify files or directories
+that have recently started to use a lot more space.
+The stat program can certainly be used to get the
+modification time.
+
+
+
+stat tells you various information about the file including
+the last modified date.
+
+At first, I was confused with Modify and Change, just to clarify,
+stat output lists:
+
+  Access shows the time of last data access (e.g. read).
+  Modify shows the time of last data modification.
+  Change shows the time the file status last changed.
+
+
+Another way that is more flexible is using date -r. From man date:
+
+  -r, --reference=FILE
+         display the last modification time of FILE
+
+This has the advantage of allowing you to specify the output format, e.g.
+
+  $ date -r foo
+  Thu Aug 31 10:36:28 AEST 2017
+  $ date -r foo -R
+  Thu, 31 Aug 2017 10:36:28 +1000
+  $ date -r foo -u
+  Thu Aug 31 00:36:28 UTC 2017
+  $ date -r foo +%s
+  1504139788
+
+
+--Get Last Modified Date of File in Linux
+  https://superuser.com/questions/737247/get-last-modified-date-of-file-in-linux
+
