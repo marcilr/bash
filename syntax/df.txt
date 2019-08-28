@@ -74,3 +74,10 @@ $
 
 Think this is the listing sent to SOA OIT DNR webmaster account.
 
+
+Links
+=====
+Can df output be forced to a single line for each file system?
+Shell Programming and Scripting
+https://www.unix.com/shell-programming-and-scripting/?s=9a8a7e5ea02ee9ab54ec2c16abb58c07
+
