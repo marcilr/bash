@@ -81,3 +81,11 @@ Can df output be forced to a single line for each file system?
 Shell Programming and Scripting
 https://www.unix.com/shell-programming-and-scripting/?s=9a8a7e5ea02ee9ab54ec2c16abb58c07
 
+CIFS shares show up in "df -l" output, which should exclude network mounts
+SOLUTION VERIFIED - Updated January 21 2015 at 11:36 PM - English 
+The df -l command is supposed to exclude network shares:
+  -l, --local
+    limit listing to local file systems
+Also like -h for human readable output.  i.e. use:
+  df -hl   <=== Very nice.
+https://access.redhat.com/solutions/1326883
