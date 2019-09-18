@@ -16,8 +16,43 @@ du [OPTION]... --files0-from=F
 
 
 
+
 Syntax
 ======
+10 largest files:
+$ du -a /where | sort -n -r | head -n 10
+
+On SOA DNR intdev system:
+# du -a /var | sort -n -r | head -n 10
+1400124	/var
+1102812	/var/cache
+1082900	/var/cache/yum
+1082896	/var/cache/yum/x86_64
+1082892	/var/cache/yum/x86_64/6Server
+650612	/var/cache/yum/x86_64/6Server/rhel-6-server-rpms
+331376	/var/cache/yum/x86_64/6Server/rhel-x86_64-server-6
+328276	/var/cache/yum/x86_64/6Server/rhel-6-server-rpms/ce4152b78d127fd678fda506e2c5f57eb10913a4-primary.sqlite
+322272	/var/cache/yum/x86_64/6Server/rhel-6-server-rpms/0e7c6d41216f184d37ce693a6073ec7d91deebe2-filelists.sqlite
+300056	/var/cache/yum/x86_64/6Server/rhel-x86_64-server-6/0bbb13e7d9105f50efc71847ac046fa139d3792d7a9ada31fc2a686f5aedf95e-primary.xml.gz.sqlite
+# 
+
+  or
+
+# du -ah /var | sort -n -r | head -n 10
+1020K	/var/lib/PackageKit/transactions.db
+1012K	/var/lib/yum/history/2011-08-05/1
+1000K	/var/lib/yum/history/2011-08-05/1/saved_tx
+968K	/var/log/httpd/intdev.dnr.alaska.gov80_rt.log-20190825
+960K	/var/log/builddatayearly.log
+944K	/var/www/icons
+916K	/var/spool/mail/root
+900K	/var/lib/yum/history/2011-08-05/309
+880K	/var/lib/yum/history/2011-08-05/309/saved_tx
+812K	/var/log/wtmp
+# 
+
+
+
 This looks nice:
 
 $ du -sh * | sort -hr | head -n10
