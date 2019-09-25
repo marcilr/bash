@@ -1,0 +1,91 @@
+df.txt
+Created Fri Aug 23 08:59:50 AKDT 2019
+Copyright (C) 2019 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+df - report file system disk space usage
+
+
+Use: df -hl 
+
+
+Options
+=======
+       -a, --all
+              include pseudo, duplicate, inaccessible file systems
+
+       -h, --human-readable
+              print sizes in powers of 1024 (e.g., 1023M)
+
+       -l, --local
+              limit listing to local file systems
+
+
+Examples
+========
+Display human-readable disk usage
+
+$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            3.9G     0  3.9G   0% /dev
+tmpfs           799M  8.5M  791M   2% /run
+/dev/sda1       242G  219G   11G  96% /
+tmpfs           4.0G   96M  3.9G   3% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           4.0G     0  4.0G   0% /sys/fs/cgroup
+shared2         931G  923G  8.2G 100% /media/shared
+tmpfs           799M  4.0K  799M   1% /run/user/109
+tmpfs           799M   12K  799M   1% /run/user/1000
+$ 
+
+
+Limit listing to local file systems.  This is what SOA OIT DNR
+sends the Webmaster account.
+
+
+$ df -l
+Filesystem     1K-blocks      Used Available Use% Mounted on
+udev             4078588         0   4078588   0% /dev
+tmpfs             817976      8696    809280   2% /run
+/dev/sda1      252852992 228969868  10969256  96% /
+tmpfs            4089864     92732   3997132   3% /dev/shm
+tmpfs               5120         0      5120   0% /run/lock
+tmpfs            4089864         0   4089864   0% /sys/fs/cgroup
+shared2        975720444 967213616   8506828 100% /media/shared
+tmpfs             817972         4    817968   1% /run/user/109
+tmpfs             817972        12    817960   1% /run/user/1000
+$ 
+
+
+Run df -hl remotely:
+
+$ ssh webtest df -hl
+Password:
+Filesystem            1K-blocks    Used Available Use% Mounted on
+devtmpfs                2960856       0   2960856   0% /dev
+tmpfs                   2972592       0   2972592   0% /dev/shm
+tmpfs                   2972592    9120   2963472   1% /run
+tmpfs                   2972592       0   2972592   0% /sys/fs/cgroup
+/dev/mapper/rhel-root  37173520 8846688  28326832  24% /
+/dev/sda1                508588  215108    293480  43% /boot
+tmpfs                    594520       0    594520   0% /run/user/923142874
+tmpfs                    594520       0    594520   0% /run/user/923131249
+$ 
+
+Think this is the listing sent to SOA OIT DNR webmaster account.
+
+
+Links
+=====
+Can df output be forced to a single line for each file system?
+Shell Programming and Scripting
+https://www.unix.com/shell-programming-and-scripting/?s=9a8a7e5ea02ee9ab54ec2c16abb58c07
+
+CIFS shares show up in "df -l" output, which should exclude network mounts
+SOLUTION VERIFIED - Updated January 21 2015 at 11:36 PM - English 
+The df -l command is supposed to exclude network shares:
+  -l, --local
+    limit listing to local file systems
+Also like -h for human readable output.  i.e. use:
+  df -hl   <=== Very nice.
+https://access.redhat.com/solutions/1326883
