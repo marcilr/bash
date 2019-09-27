@@ -1,0 +1,27 @@
+printf.txt
+Created Fri Sep 27 08:17:25 AKDT 2019
+Copyright (C) 2019 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+printf command in bash
+
+printf prints a formatted string to the standard output.
+Its roots are in the C programming language, which uses
+a function by the same name.  It is a handy way to
+produce precisely-formatted output from numerical or
+textual arguments.
+--www.computerhope.com/unix/uprintf.htm
+
+$ type printf
+printf is a shell builtin
+$
+
+
+
+Links
+=====
+Linux printf command
+Updated: 05/04/2019 by Computer Hope
+Computer Hope
+Free computer help since 1998
+https://www.computerhope.com/unix/uprintf.htm
