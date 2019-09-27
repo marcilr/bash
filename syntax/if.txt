@@ -16,3 +16,6 @@ Links
 If Statements!
 Decisions, decisions.
 https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php
+
+In a bash script, using the conditional “or” in an “if” statement
+https://unix.stackexchange.com/questions/47584/in-a-bash-script-using-the-conditional-or-in-an-if-statement
