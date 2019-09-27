@@ -69,7 +69,10 @@ IFS.txt
 
 increment.txt
   Variable incrementing in bash:
-    ((i++))
+  ((i++))
+
+increment-variable.txt
+  Increment variable
 
 indirect-reference.txt
   Indirect reference - Variable to access a variable
