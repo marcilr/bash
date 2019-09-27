@@ -1,0 +1,13 @@
+case.txt
+Created Fri Sep 27 10:48:30 AKDT 2019
+Copyright (C) 2019 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Case statement
+
+
+Links
+=====
+CASE Statement in Bash [Example]
+Posted on Tuesday December 27th, 2016 by admin
+https://www.shellhacks.com/case-statement-bash-example/
