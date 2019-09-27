@@ -91,9 +91,16 @@ zhihua-lai.com/
 
 Links
 =====
+Bash Functions
+https://linuxize.com/post/bash-functions/
+
 Chapter 24. Functions
 Advanced Bash-Scripting Guide
 http://tldp.org/LDP/abs/html/functions.html
 
 Passing Arguments to BASH function
 http://www.zhihua-lai.com/acm/passing-arguments-to-bash-function/
+
+Passing parameters to a Bash function
+https://stackoverflow.com/questions/6212219/passing-parameters-to-a-bash-function
+
