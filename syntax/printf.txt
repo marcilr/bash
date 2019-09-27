@@ -81,3 +81,7 @@ Links
 [1] Bash's Built-in printf Function
 by Mitch Frazier on January 16, 2019
 https://www.linuxjournal.com/content/bashs-built-printf-function
+
+Bash printf syntax basics
+Lubos Rendek, Programming & Scripting, 22 March 2013
+https://linuxconfig.org/bash-printf-syntax-basics-with-examples
