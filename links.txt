@@ -25,6 +25,9 @@ Bash For Loop Examples
 by nixCraft on October 31, 2008
 http://www.cyberciti.biz/faq/bash-for-loop/
 
+Bash Guide for Beginners   <===
+by Machtelt Garrels
+https://www.tldp.org/LDP/Bash-Beginners-Guide/html/
 BASH Programming - Introduction HOW-TO
 by Mike G mikkey at dynamo.com.ar
 http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html
