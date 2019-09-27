@@ -9,6 +9,9 @@ Comparison Operators
 
 Links
 =====
+How to compare strings in Bash
+https://stackoverflow.com/questions/2237080/how-to-compare-strings-in-bash
+
 Other Comparison Operators
 Advanced Bash-Scripting Guide
 Great listing of comparison operators.
