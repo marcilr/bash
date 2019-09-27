@@ -80,6 +80,16 @@ math.txt
 parse-arguments.txt
   Parse arguments in bash
 
+printf.txt
+  printf command in bash
+
+  "printf prints a formatted string to the standard output.
+  Its roots are in the C programming language, which uses
+  a function by the same name.  It is a handy way to
+  produce precisely-formatted output from numerical or
+  textual arguments."
+  http://www.computerhope.com/unix/uprintf.htm
+
 return-values-from-bash-functions.txt
   Returning Values from Bash Functions
   Really cool methods of returning values from bash functions.
