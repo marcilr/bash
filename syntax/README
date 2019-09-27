@@ -88,6 +88,9 @@ links.txt
 loop-over-files.txt
   Loop over files using find
 
+match-numeric-string.txt
+  Match numberic string
+
 math.txt
   Performing Math calculation in Bash
 
