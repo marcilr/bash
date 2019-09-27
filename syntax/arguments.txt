@@ -1,0 +1,37 @@
+arguments.txt
+Created Fri Sep 27 10:33:08 AKDT 2019
+Copyright (C) 2019 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Arguments
+
+
+Iterate over arguements
+=======================
+"Use "$@" to represent all the arguments
+
+for var in "$@"
+do
+    echo "$var"
+done
+
+This will iterate over each argument and print it out on
+a separate line. $@ behaves like $* except that when quoted
+the arguments are broken up properly if there are spaces in
+them:
+
+sh test.sh 1 2 '3 4'
+1
+2
+3 4
+
+--answered Nov 1 '08 at 18:25
+  Robert Gamble
+  edited Nov 1 '08 at 23:52
+  stackoverflow.com/questions/255898/
+
+
+Links
+=====
+How to iterate over arguments in a Bash script
+https://stackoverflow.com/questions/255898/how-to-iterate-over-arguments-in-a-bash-script
