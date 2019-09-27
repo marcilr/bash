@@ -3,57 +3,81 @@ Created Fri Sep 27 08:17:25 AKDT 2019
 Copyright (C) 2019 by Raymond E. Marcil <marcilr@gmail.com>
 
 
-printf command in bash
+printf
 
+
+Bash has a printf command that can be used to output
+formatted strings.  It accepts a format string and 
+arguments to formatted in the string.  Provides a 
+convenient way of generating formatted strings in 
+bash.
 
 $ type printf
 printf is a shell builtin
 $
 
 
-"printf prints a formatted string to the standard output.
-Its roots are in the C programming language, which uses
-a function by the same name.  It is a handy way to
-produce precisely-formatted output from numerical or
-textual arguments."
-
 
 Syntax
 ======
-printf FORMAT [ARGUMENT]...
-printf OPTION
+printf <format> [argument]...
+printf <option>
 
 
 Options
 -------
-FORMAT	    FORMAT controls the output, and defines the way that
-            the ARGUMENTs will be expressed in the output.
-            See the Format section, below.
-
-ARGUMENT    Each ARGUMENT will be inserted into the formatted
-            output according to the definition of FORMAT.
-
---help	    Display a help message, and exit.
-
---version   Display version information, and exit."
---www.computerhope.com/unix/uprintf.htm
+format      String used to format output
+argument    Arguments to be inserted in the formatted string
+--help	    Help message with usage
 
 
+Format string
+=============
+"You provide printf with a format string and a list of values.
+It then replaces the %... sequences in the string with the values
+from the list formatted according to the format specification
+(the part following the percent sign).  There are a dozen or more
+format specifier characters, but 99% of the time, the only ones
+you'll need are the following:
+
+o d - Format a value as a signed decimal number.
+o u - Format a value as an unsigned decimal number.
+o x - Format a value as a hexadecimal number with lower case a-f.
+o X - Format a value as a hexadecimal number with upper case A-F.
+o s - Format a value as a number [edit: correction, as a "string"].
+
+Format specifiers can be preceded by a field width to specify the
+minimum number of characters to print.  A positive width causes the
+value to be right-justified; a negative width causes the value to
+be left-justiifed.  A width with a leading zero causes numeric
+fields to be zero-filled.  Usually, you want to use negative widths
+for strings and positive widths for numbers."[1]
 
 
-
-Example
-=======
+Examples
+========
 $ printf "foo %s\n" "bar"
 foo bar
 $
+
+$ printf "foo 10%s\n" "bar"
+foo bar
+$
+
+$ printf "foo%10s\n" "bar"
+foo       bar
+$ 
+
+$ printf "%10s%10s\n" "foo" "bar"
+       foo       bar
+$ 
+
+Good stuff
 
 
 
 Links
 =====
-Linux printf command
-Updated: 05/04/2019 by Computer Hope
-Computer Hope
-Free computer help since 1998
-https://www.computerhope.com/unix/uprintf.htm
+[1] Bash's Built-in printf Function
+by Mitch Frazier on January 16, 2019
+https://www.linuxjournal.com/content/bashs-built-printf-function
