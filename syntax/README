@@ -63,6 +63,8 @@ functions.txt
   Functions in bash
   http://tldp.org/LDP/abs/html/functions.html
 
+if.txt
+  If
 
 IFS.txt
   IFS (Internal Field Separator)
