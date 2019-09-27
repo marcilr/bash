@@ -94,3 +94,8 @@ Linux printf command
 Updated: 05/04/2019 by Computer Hope
 This was the 1st printf page I found
 https://www.computerhope.com/unix/uprintf.htm
+
+Printing Fixed Width Columns
+Shell Programming and Scripting
+Some good printf syntax here
+https://www.unix.com/shell-programming-and-scripting/132905-printing-fixed-width-columns.html
