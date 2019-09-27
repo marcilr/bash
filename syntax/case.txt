@@ -12,3 +12,15 @@ CASE Statement in Bash [Example]
 Posted on Tuesday December 27th, 2016 by admin
 ShellHacks, Linux Hacks and Guides
 https://www.shellhacks.com/case-statement-bash-example/
+
+How do I match a numeric string in a bash case statement
+# this is very clumsy, but works in all POSIX shells
+isNum() {
+  case $1 in [0-9][0-9][0-9][0-9][0-9])           : "Matched 5" ;;
+             [0-9][0-9][0-9][0-9][0-9][0-9])      : "Matched 6" ;;
+             [0-9][0-9][0-9][0-9][0-9][0-9][0-9]) : "Matched 7" ;;
+             *) return ;;
+  esac
+  echo "Got it!" # only reached if the "return" didn't happen
+}
+https://stackoverflow.com/questions/42570292/how-do-i-match-a-numeric-string-in-a-bash-case-statement
