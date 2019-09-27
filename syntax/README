@@ -20,6 +20,9 @@ basename.txt
     or
   basename - strip directory and suffix from filenames
 
+case.txt
+  Case statement
+
 cli-args.txt
   Command Line Arguments
 
