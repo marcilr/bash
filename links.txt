@@ -59,6 +59,9 @@ How do I compare two string variables in an 'if'
 statement in Bash [duplicate]
 https://stackoverflow.com/questions/4277665/how-do-i-compare-two-string-variables-in-an-if-statement-in-bash
 
+How do I use pushd and popd commands?
+https://unix.stackexchange.com/questions/77077/how-do-i-use-pushd-and-popd-commands
+
 How to Get the Size of a Directory in Linux
 https://linuxize.com/post/how-get-size-of-file-directory-linux/
 
