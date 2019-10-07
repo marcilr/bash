@@ -5,6 +5,9 @@ Copyright (C) 2017 by Raymond E. Marcil <marcilr@gmail.com>
 
 Filelist
 ========
+arguments.txt
+  Arguments
+
 array.txt
   Bash Arrays
 
@@ -17,6 +20,9 @@ basename.txt
     or
   basename - strip directory and suffix from filenames
 
+case.txt
+  Case statement
+
 cli-args.txt
   Command Line Arguments
 
@@ -26,6 +32,9 @@ color.txt
 command-line-syntax.txt
   Command line syntax
   http://publib.boulder.ibm.com/tividd/td/tec/SC32-1232-00/en_US/HTML/ecormst15.htm
+
+comparison-operators.txt
+  Comparison Operators
 
 df.txt
   df - report file system disk space usage
@@ -57,13 +66,18 @@ functions.txt
   Functions in bash
   http://tldp.org/LDP/abs/html/functions.html
 
+if.txt
+  If
 
 IFS.txt
   IFS (Internal Field Separator)
 
 increment.txt
   Variable incrementing in bash:
-    ((i++))
+  ((i++))
+
+increment-variable.txt
+  Increment variable
 
 indirect-reference.txt
   Indirect reference - Variable to access a variable
@@ -74,11 +88,24 @@ links.txt
 loop-over-files.txt
   Loop over files using find
 
+match-numeric-string.txt
+  Match numberic string
+
 math.txt
   Performing Math calculation in Bash
 
 parse-arguments.txt
   Parse arguments in bash
+
+printf.txt
+  printf command in bash
+
+  "printf prints a formatted string to the standard output.
+  Its roots are in the C programming language, which uses
+  a function by the same name.  It is a handy way to
+  produce precisely-formatted output from numerical or
+  textual arguments."
+  http://www.computerhope.com/unix/uprintf.htm
 
 return-values-from-bash-functions.txt
   Returning Values from Bash Functions
@@ -100,6 +127,9 @@ suppress-output.txt
 
 syntax.txt
   Syntax
+
+test-if-variable-is-number.txt
+  Test if variable is number
 
 timestamp.txt
   How to get file creation date/time in Bash/Debian?

@@ -1,0 +1,58 @@
+match-numeric-string.txt
+Created Fri Sep 27 10:51:20 AKDT 2019
+Copyright (C) 2019 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Match numberic string
+
+
+How do I match a numeric string in a bash case statement
+
+# this is very clumsy, but works in all POSIX shells
+isNum() {
+  case $1 in [0-9][0-9][0-9][0-9][0-9])           : "Matched 5" ;;
+             [0-9][0-9][0-9][0-9][0-9][0-9])      : "Matched 6" ;;
+             [0-9][0-9][0-9][0-9][0-9][0-9][0-9]) : "Matched 7" ;;
+             *) return ;;
+  esac
+  echo "Got it!" # only reached if the "return" didn't happen
+}
+--answered Mar 3 '17 at 3:51
+  edited Mar 3 '17 at 4:00
+  Charles Duffy
+  stackoverflow.com/questions/42570292
+
+
+For SOA OIT DNR, Sep 27, 2019, in process-logs wrote code
+to scan for numeric argument (month 01 to 12):
+
+#
+# Check if parameter starts with '-' dash
+# process as argument
+#
+if [ "${FIRSTCHAR}" = '-' ]; then
+    processArgument
+else
+    #
+    # Check if first character is a digit
+    #
+    RE='^[0-9]+$'
+    if [[ ${FIRSTCHAR} =~ $RE ]] ; then
+        debug "processArguments()" "'${FIRSTCHAR}' is a number" >&2
+        # If MONTH not set process as month 01 to 12.
+        if [ -z ${MONTH} ]; then
+            processMonth
+        elif [ -z ${YEAR} ]; then
+            processYear
+        fi
+    else
+        debug "processArguments()" "'${FIRSTCHAR}' not a number" >&2
+    fi   # End if [[ ${FIRSTCHAR} =~ $RE ]] ; then
+fi    # End if [ "${FIRSTCHAR}" = '-' ]; then
+
+
+Links
+=====
+How do I match a numeric string in a bash case statement
+Initial month processing code I saw
+https://stackoverflow.com/questions/42570292/how-do-i-match-a-numeric-string-in-a-bash-case-statement

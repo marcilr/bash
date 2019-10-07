@@ -11,3 +11,8 @@ Links
 How to limit depth for recursive file list?
 find -maxdepth 2 -type d -ls >dirlist
 https://stackoverflow.com/questions/4509624/how-to-limit-depth-for-recursive-file-list
+
+Math operators
+Other Comparison Operators
+Advanced Bash-Scripting Guide
+https://www.tldp.org/LDP/abs/html/comparison-ops.html

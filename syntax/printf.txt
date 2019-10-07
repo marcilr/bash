@@ -1,0 +1,101 @@
+printf.txt
+Created Fri Sep 27 08:17:25 AKDT 2019
+Copyright (C) 2019 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+printf
+
+
+Bash has a printf command that can be used to output
+formatted strings.  It accepts a format string and 
+arguments to formatted in the string.  Provides a 
+convenient way of generating formatted strings in 
+bash.
+
+$ type printf
+printf is a shell builtin
+$
+
+
+
+Syntax
+======
+printf <format> [argument]...
+printf <option>
+
+
+Options
+-------
+format      String used to format output
+argument    Arguments to be inserted in the formatted string
+--help	    Help message with usage
+
+
+Format string
+=============
+"You provide printf with a format string and a list of values.
+It then replaces the %... sequences in the string with the values
+from the list formatted according to the format specification
+(the part following the percent sign).  There are a dozen or more
+format specifier characters, but 99% of the time, the only ones
+you'll need are the following:
+
+o d - Format a value as a signed decimal number.
+o u - Format a value as an unsigned decimal number.
+o x - Format a value as a hexadecimal number with lower case a-f.
+o X - Format a value as a hexadecimal number with upper case A-F.
+o s - Format a value as a number [edit: correction, as a "string"].
+
+Format specifiers can be preceded by a field width to specify the
+minimum number of characters to print.  A positive width causes the
+value to be right-justified; a negative width causes the value to
+be left-justiifed.  A width with a leading zero causes numeric
+fields to be zero-filled.  Usually, you want to use negative widths
+for strings and positive widths for numbers."[1]
+
+
+Examples
+========
+$ printf "foo %s\n" "bar"
+foo bar
+$
+
+$ printf "foo 10%s\n" "bar"
+foo bar
+$
+
+$ printf "foo%10s\n" "bar"
+foo       bar
+$ 
+
+$ printf "%10s%10s\n" "foo" "bar"
+       foo       bar
+$ 
+
+Good stuff
+
+
+
+Links
+=====
+[1] Bash's Built-in printf Function
+by Mitch Frazier on January 16, 2019
+https://www.linuxjournal.com/content/bashs-built-printf-function
+
+Bash printf syntax basics
+Lubos Rendek, Programming & Scripting, 22 March 2013
+https://linuxconfig.org/bash-printf-syntax-basics-with-examples
+
+Bash's Built-in printf Function
+by Mitch Frazier on January 16, 2019
+https://www.linuxjournal.com/content/bashs-built-printf-function
+
+Linux printf command
+Updated: 05/04/2019 by Computer Hope
+This was the 1st printf page I found
+https://www.computerhope.com/unix/uprintf.htm
+
+Printing Fixed Width Columns
+Shell Programming and Scripting
+Some good printf syntax here
+https://www.unix.com/shell-programming-and-scripting/132905-printing-fixed-width-columns.html
