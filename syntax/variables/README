@@ -5,5 +5,8 @@ Copyright (C) 2019 by Raymond E. Marcil <marcilr@gmail.com>
 
 Filelist
 ========
+links.txt
+  Variable related links
+
 variables.txt
   GNU Make Variables
