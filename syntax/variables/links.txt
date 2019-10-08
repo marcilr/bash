@@ -1,0 +1,12 @@
+links.txt
+Created Tue Oct  8 07:54:58 AKDT 2019
+Copyright (C) 2019 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Variable related links
+
+
+Links
+=====
+How to increment a variable in bash?
+https://askubuntu.com/questions/385528/how-to-increment-a-variable-in-bash
