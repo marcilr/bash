@@ -132,6 +132,9 @@ timestamp.txt
   How to get file creation date/time in Bash/Debian?
   Interestingly the file system does not keep the creation date.
 
+variables/
+  Variables
+
 variables.txt
   GNU Make Variables
 
