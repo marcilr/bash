@@ -1,0 +1,15 @@
+links.txt
+Created Tue Oct  8 07:48:38 AKDT 2019
+Copyright (C) 2019 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Argument related links
+
+
+Links
+=====
+Taking Command Line Arguments in Bash
+Submitted by NanoDano on Tue, 03/20/2018 - 01:54
+<DEV_DUNGEON>
+VIRTUAL HACKERSPACE
+https://www.devdungeon.com/content/taking-command-line-arguments-bash
