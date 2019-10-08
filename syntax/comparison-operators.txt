@@ -9,6 +9,9 @@ Comparison Operators
 
 Links
 =====
+Check if $REPLY is in a range of numbers
+https://unix.stackexchange.com/questions/118856/check-if-reply-is-in-a-range-of-numbers
+
 How to compare strings in Bash
 https://stackoverflow.com/questions/2237080/how-to-compare-strings-in-bash
 
