@@ -8,9 +8,6 @@ Filelist
 arguments/
   Arguments
 
-arguments.txt
-  Arguments
-
 array.txt
   Bash Arrays
 
@@ -96,9 +93,6 @@ match-numeric-string.txt
 
 math.txt
   Performing Math calculation in Bash
-
-parse-arguments.txt
-  Parse arguments in bash
 
 printf.txt
   printf command in bash
