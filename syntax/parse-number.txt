@@ -1,0 +1,68 @@
+parse-number.txt
+Created Tue Oct  8 07:57:30 AKDT 2019
+Copyright (C) 2019 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Parse number using regular expression
+
+One approach is to use a regular expression, like so:
+  re='^[0-9]+$'
+  if ! [[ $yournumber =~ $re ]] ; then
+     echo "error: Not a number" >&2; exit 1
+  fi
+
+If the value is not necessarily an integer, consider 
+amending the regex appropriately; for instance:
+
+  ^[0-9]+([.][0-9]+)?$
+
+...or, to handle numbers with a sign:
+
+  ^[+-]?[0-9]+([.][0-9]+)?$
+--stackoverflow.com/questions/806906/
+
+
+Example
+=======
+In SOA OIT DNR reportsmonthlymanual-2.sh for updating internet
+usage statitics and metrics I use a regular expression for
+identifying 2-digit months and year strings:
+
+
+reportsmonthlymanual-2.sh:130
+
+    # Track argument position
+    ARGINDEX=1
+
+    # Regular expression for 2-digit numbers
+    re='^[0-9][0-9]$'
+
+    # Loop over command line arguments
+    for ARG in ${ARGS}; do
+        debug "process_arguments() ARG ${ARGINDEX}=${ARG}"
+        ((ARGINDEX++))
+        case ${ARG} in
+          -d | --debug )
+              DEBUG=true
+              debug "process_arguments() DEBUG=true"
+              ;;
+          *)
+              # Check if 2-digit number
+              if [[ $ARG =~ $re ]]; then
+                 debug "process_arguments() Processed 2-digit number: ${ARG}"
+                 process_number
+              fi
+              ;;
+        esac
+    done
+
+--intdev:/net/dnr-atwfs1/vol/vol1/weblogs/scripts/reportsmonthlymanual-2.sh:130
+
+
+Links
+=====
+How do I test if a variable is a number in Bash?
+Asked 10 years, 5 months ago
+I just can't figure out how do I make sure an argument 
+passed to my script is a number or not.
+https://stackoverflow.com/questions/806906/how-do-i-test-if-a-variable-is-a-number-in-bash
