@@ -13,3 +13,7 @@ Submitted by NanoDano on Tue, 03/20/2018 - 01:54
 <DEV_DUNGEON>
 VIRTUAL HACKERSPACE
 https://www.devdungeon.com/content/taking-command-line-arguments-bash
+
+Split string by delimiter and get N-th element
+UNIX & LINUX
+https://unix.stackexchange.com/questions/312280/split-string-by-delimiter-and-get-n-th-element
