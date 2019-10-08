@@ -8,6 +8,10 @@ Case statement
 
 Links
 =====
+Bash Case Statement
+Posted Feb 28, 2019
+https://linuxize.com/post/bash-case-statement/
+
 CASE Statement in Bash [Example]
 Posted on Tuesday December 27th, 2016 by admin
 ShellHacks, Linux Hacks and Guides
