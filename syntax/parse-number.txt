@@ -61,6 +61,10 @@ reportsmonthlymanual-2.sh:130
 
 Links
 =====
+Check if $REPLY is in a range of numbers
+UNIX & LINUX
+https://unix.stackexchange.com/questions/118856/check-if-reply-is-in-a-range-of-numbers
+
 How do I test if a variable is a number in Bash?
 Asked 10 years, 5 months ago
 I just can't figure out how do I make sure an argument 
