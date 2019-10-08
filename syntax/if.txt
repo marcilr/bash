@@ -28,3 +28,7 @@ https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php
 
 In a bash script, using the conditional “or” in an “if” statement
 https://unix.stackexchange.com/questions/47584/in-a-bash-script-using-the-conditional-or-in-an-if-statement
+
+what is the difference between if and [[ in bash?
+UNIX & LINUX
+https://unix.stackexchange.com/questions/72260/what-is-the-difference-between-if-and-in-bash
