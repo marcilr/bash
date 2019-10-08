@@ -94,6 +94,9 @@ match-numeric-string.txt
 math.txt
   Performing Math calculation in Bash
 
+parse-number.txt
+  Parsing number
+
 printf.txt
   printf command in bash
 
