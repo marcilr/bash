@@ -69,5 +69,14 @@ Last line of file specified as non-opt/last argument:
 
 Links
 =====
+For zsh-users there's a great builtin called zparseopts which can 
+do: zparseopts -D -E -M -- d=debug -debug=d And have both -d and 
+--debug in the $debug array echo $+debug[1] will return 0 or 1 if 
+one of those are used. 
+Ref: zsh.org/mla/users/2011/msg00350.html – dezza Aug 2 '16 at 2:13 
+
 How do I parse command line arguments in Bash?
 https://stackoverflow.com/questions/192249/how-do-i-parse-command-line-arguments-in-bash
+
+test man page
+http://linuxcommand.org/lc3_man_pages/testh.html
