@@ -29,6 +29,9 @@ cli-args.txt
 color.txt
   Color
 
+command-line-arguments.txt
+  Command line arguments
+
 command-line-syntax.txt
   Command line syntax
   http://publib.boulder.ibm.com/tividd/td/tec/SC32-1232-00/en_US/HTML/ecormst15.htm
