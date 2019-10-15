@@ -28,3 +28,8 @@ isNum() {
   echo "Got it!" # only reached if the "return" didn't happen
 }
 https://stackoverflow.com/questions/42570292/how-do-i-match-a-numeric-string-in-a-bash-case-statement
+
+Using case statements
+Bash Guide for Beginners
+Conditional statements
+https://www.tldp.org/LDP/Bash-Beginners-Guide/html/sect_07_03.html
