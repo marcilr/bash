@@ -1,0 +1,18 @@
+ls.txt
+Created Wed Oct 23 08:28:15 AKDT 2019
+Copyright (C) 2019 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+ls - list directory contents
+
+
+To list directories with trailing slash use -p option:
+
+In ~/.bash_profile updated:
+
+alias ls='ls --color=auto'
+
+  to:
+
+alias ls='ls -p --color=auto'
+
