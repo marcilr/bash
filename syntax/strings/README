@@ -5,6 +5,8 @@ Copyright (C) 2019 by Raymond E. Marcil <marcilr@gmail.com>
 
 Filelist
 ========
-strings/
+strings.txt
   Strings 
 
+string-contains.txt
+  Test if a string contains another string
