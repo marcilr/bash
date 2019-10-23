@@ -88,6 +88,9 @@ links.txt
 loop-over-files.txt
   Loop over files using find
 
+ls.txt
+  ls - list directory contents
+
 match-numeric-string.txt
   Match numberic string
 
