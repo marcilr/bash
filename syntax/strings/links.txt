@@ -1,0 +1,15 @@
+links.txt
+Created Wed Oct 23 07:51:28 AKDT 2019
+Copyright (C) 2019 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+String related links
+
+
+Links
+=====
+Bash check if string starts with character such as #
+last updated December 14, 2018 in Categories BASH Shell, Linux, UNIX
+nixCraft
+Linux and Unix tutorials for new and seasoned sysadmin
+https://www.cyberciti.biz/faq/bash-check-if-string-starts-with-character-such-as/
